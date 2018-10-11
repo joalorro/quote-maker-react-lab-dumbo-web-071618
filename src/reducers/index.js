@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import quotes from './quotes';
+import quoteReducer from './quotes';
 
-export default combineReducers({
-  quotes
+const rootReducer = combineReducers({
+	quotes: quoteReducer
 });
+
+export default rootReducer
